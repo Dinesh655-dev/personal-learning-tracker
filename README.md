@@ -258,7 +258,7 @@ This project helped practice:
 
 ```bash
 
-git clone <repository-url>
+git clone https://github.com/Dinesh655-dev/personal-learning-tracker.git
 
 ```
 
@@ -270,7 +270,7 @@ git clone <repository-url>
 
 ```bash
 
-cd Personal-Learning-Tracker
+cd personal-learning-tracker
 
 ```
 
