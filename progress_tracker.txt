@@ -1,0 +1,15 @@
+Two Sum|Arrays|Leetcode|Easy|8|15 June 2026
+Contains Duplicate|Hashing|Leetcode|Easy|6|15 June 2026
+Valid Anagram|Hashing|Leetcode|Easy|12|16 June 2026
+Best Time to Buy and Sell Stock|Two Pointers|Leetcode|Easy|18|16 June 2026
+Valid Parentheses|Stack|Leetcode|Easy|10|17 June 2026
+Binary Search|Binary Search|Leetcode|Easy|7|17 June 2026
+Reverse Linked List|Linked List|Leetcode|Easy|15|18 June 2026
+Balanced Binary Tree|Trees|Leetcode|Easy|25|18 June 2026
+Kth Largest Element in an Array|Heap|Leetcode|Medium|30|19 June 2026
+Number of Islands|Graphs|Leetcode|Medium|45|19 June 2026
+Climbing Stairs|Dynamic Programming|Leetcode|Easy|20|20 June 2026
+Group Anagrams|Hashing|Leetcode|Medium|35|20 June 2026
+Merge Intervals|Arrays|Codewars|Medium|28|20 June 2026
+Coin Change|Dynamic Programming|Leetcode|Hard|60|21 June 2026
+Word Ladder|Graphs|Exercism|Hard|75|21 June 2026
