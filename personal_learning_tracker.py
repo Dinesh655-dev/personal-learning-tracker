@@ -1,5 +1,10 @@
-with open('progress_tracker.txt','a')as f:
-    
+import os
+FILE_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "progress_tracker.txt"
+)
+print(FILE_PATH)
+import time
 from datetime import date
 PLATFORM = ['Leetcode', 'Codewars', 'Exercism']
 DIFFICULTY = ['Easy', 'Medium', 'Hard']
@@ -22,6 +27,7 @@ def add_progress():
         name=input("Problem Name: ").strip()
         if name:
             break
+        print("Problem name cannot be empty")
     for i in range(len(TOPIC)):
         print(f"{i+1}.{TOPIC[i]}")
     while True:
@@ -57,13 +63,13 @@ def add_progress():
     save_progress(name,topic,platform,difficulty,tm,today)
     print("\nProblem recorded successfully!\n")
 def save_progress(name,topic,platform,difficulty,tm,today):
-    with open('progress_tracker.txt','a')as f:
+    with open(FILE_PATH,'a')as f:
         f.write('|'.join([name,topic,platform,difficulty,tm,today])+'\n')
 def view_progress():
     print("\t\t\t=== View Progress ===")
     print("Review your learning history and track the progress you have made so far.")
     try:
-        with open('progress_tracker.txt', 'r') as f:
+        with open(FILE_PATH, 'r') as f:
             records = list(f)
     except FileNotFoundError:
         print("\nNo progress file found.")
@@ -114,7 +120,7 @@ def view_progress():
         print(f"{i} count: {j}")
     print("Fastest solve:", min_prob,min_t, "min")
     print("Slowest solve:", max_prob,max_t, "min")
-    print("Average solving time: ",avg)
+    print(f"Average solving time: {avg:.2f} min")
 print("\t\t\t=== Personal Learning Tracker ===")
 print('''Learning new skills requires consistency and proper tracking. Personal Learning Tracker, helps
 users keep a record of what they have learned, what they are currently studying, and what remains to
