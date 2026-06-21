@@ -3,7 +3,6 @@ FILE_PATH = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "progress_tracker.txt"
 )
-print(FILE_PATH)
 import time
 from datetime import date
 PLATFORM = ['Leetcode', 'Codewars', 'Exercism']
